@@ -12,7 +12,7 @@ export function Footer() {
           placeholder="Digite sua dúvida..."
         />
       </div>
-      <div className="absolute right-2 bottom-2 bg-primaryOrange rounded-full pt-3 w-12 h-12 text-white cursor-pointer text-center font-semibold hover:bg-white hover:text-primaryOrange hover:border-solid hover:border-2 hover:border-primaryOrange duration-75">
+      <div className="md:absolute fixed right-4 bottom-3 bg-primaryOrange rounded-full pt-3 w-12 h-12 text-white cursor-pointer text-center font-semibold hover:bg-white hover:text-primaryOrange hover:border-solid hover:border-2 hover:border-primaryOrange duration-75" style={{ marginBottom: 'env(safe-area-right-bottom)' }}>
         <button>
           <RiSendPlaneFill className="w-6 h-6" />
         </button>
