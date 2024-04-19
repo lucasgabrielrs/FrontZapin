@@ -3,7 +3,7 @@ import { RiSendPlaneFill } from "react-icons/ri";
 export function Footer() {
   return (
     <div className="pt-2 pb-[env(safe-area-inset-bottom, 20px)] bg-white">
-      <div className="absolute inset-x-0 bottom-3 rounded-lg border-solid border-2 border-primaryOrange w-3/4 left-4 bottom-2 bg-laranjinha" style={{ marginBottom: 'env(safe-area-inset-bottom)' }}>
+      <div className="md:absolute fixed inset-x-0 bottom-3 rounded-lg border-solid border-2 border-primaryOrange w-3/4 left-4 bottom-2 bg-laranjinha" style={{ marginBottom: 'env(safe-area-inset-bottom)' }}>
         <input
           className="appearance-none border-none m-0 bg-transparent focus:outline-none w-full p-2"
           type="text"
