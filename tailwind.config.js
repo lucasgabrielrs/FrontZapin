@@ -14,7 +14,8 @@ export default {
       },
       colors: {
         'primaryOrange': '#ef6c00',
-        'fundoSendbox': '#ef6c0060'
+        'fundoSendbox': '#ef6c0060',
+        'laranjinha': '#FFE3D1'
       }
     },
   },

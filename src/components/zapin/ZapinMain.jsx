@@ -37,18 +37,18 @@ export function Zapin() {
     <>
       {!isOpen && (
         <div
-        className="w-24 h-24 bg-primaryOrange fixed right-8 bottom-8 rounded-full hover:w-56 duration-150 flex items-center justify-center cursor-pointer"
+        className="w-20 h-20 md:w-24 md:h-24 min-h-[10x] min-w-[10px] bg-primaryOrange fixed right-8 bottom-8 rounded-full md:hover:w-56 duration-150 flex items-center justify-center cursor-pointer"
         onClick={toggleChat}
       >
         <FaRegComments className="text-white w-12 h-12 absolute transition-opacity duration-150 hover:opacity-0"/>
-        <h1 className="opacity-0 absolute transition-opacity duration-150 flex text-white justify-center text-center items-center w-full h-full font-bold text-xl hover:opacity-100">
+        <h1 className="opacity-0 absolute transition-opacity duration-150 flex text-white justify-center text-center items-center w-full h-full font-bold text-xl md:hover:opacity-100">
           Alguma dúvida?
         </h1>
       </div>
       )}
 
       {isOpen && (
-        <div className="flex bg-white fixed w-screen h-screen md:w-96 md:h-2/3 md:right-10 md:bottom-10 md:border-solid md:border-primaryOrange md:border-2 md:rounded-xl" ref={chatRef}>
+        <div className="flex bg-white fixed w-screen h-screen min-h-[300px] md:w-96 md:h-2/3 md:right-10 md:bottom-10 md:border-solid md:border-primaryOrange md:border-2 md:rounded-xl" ref={chatRef}>
             <Header isOpen={isOpen} toggleChat={toggleChat} />
             <Chat />
             <Footer />

@@ -2,8 +2,8 @@ import { RiSendPlaneFill } from "react-icons/ri";
 
 export function Footer() {
   return (
-    <div>
-      <div className="absolute rounded-lg border-solid border-2 border-primaryOrange w-3/4 left-4 bottom-2 bg-fundoSendbox ">
+    <div className="pt-2 pb-[env(safe-area-inset-bottom, 20px)] bg-white"> {/* Ajuste aqui */}
+      <div className="fixed inset-x-0 bottom-0 flex justify-between items-center p-3 bg-laranjinha rounded-lg border-solid border-2 border-primaryOrange shadow-lg" style={{ marginBottom: 'env(safe-area-inset-bottom)' }}> {/* Ajuste aqui */}
         <input
           className="appearance-none border-none m-0 bg-transparent focus:outline-none w-full p-2"
           type="text"
