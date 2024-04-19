@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'fundo': "url(./images/chat-background.png)"
+      },
       height: {
         '60p': '60%',
       },

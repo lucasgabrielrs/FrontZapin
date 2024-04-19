@@ -1,10 +1,10 @@
-import { ChatIa } from './components/chatbot/ChatIa'
+import { Zapin } from './components/zapin/ZapinMain.jsx'
 
 function App() {
 
   return (
     <>
-      <ChatIa/>
+      <Zapin/>
     </>
   )
 }
