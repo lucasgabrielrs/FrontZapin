@@ -40,7 +40,7 @@ export function Zapin() {
         className="w-20 h-20 md:w-24 md:h-24 min-h-[10x] min-w-[10px] bg-primaryOrange fixed right-8 bottom-8 rounded-full md:hover:w-56 duration-150 flex items-center justify-center cursor-pointer"
         onClick={toggleChat}
       >
-        <FaRegComments className="text-white w-12 h-12 absolute transition-opacity duration-150 hover:opacity-0"/>
+        {/*<FaRegComments className="text-white w-12 h-12 absolute transition-opacity duration-150 hover:opacity-0"/> */}
         <h1 className="opacity-0 absolute transition-opacity duration-150 flex text-white justify-center text-center items-center w-full h-full font-bold text-xl md:hover:opacity-100">
           Alguma dúvida?
         </h1>
