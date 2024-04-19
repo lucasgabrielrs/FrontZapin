@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { FaRegComments } from "react-icons/fa6";
 import { Chat } from "../chat/Chat";
 import { Footer } from "../footer/Footer";
 import { Header } from "../header/Header";
@@ -36,13 +37,14 @@ export function Zapin() {
     <>
       {!isOpen && (
         <div
-          className="w-24 h-24 bg-primaryOrange fixed right-8 bottom-8 rounded-full hover:w-56 duration-150 flex items-center justify-center"
-          onClick={toggleChat}
-        >
-          <h1 className="opacity-0 duration-75 flex text-white justify-center text-center items-center w-full h-full font-bold text-xl hover:opacity-100">
-            Alguma dúvida?
-          </h1>
-        </div>
+        className="w-24 h-24 bg-primaryOrange fixed right-8 bottom-8 rounded-full hover:w-56 duration-150 flex items-center justify-center cursor-pointer"
+        onClick={toggleChat}
+      >
+        <FaRegComments className="text-white w-12 h-12 absolute transition-opacity duration-150 hover:opacity-0"/>
+        <h1 className="opacity-0 absolute transition-opacity duration-150 flex text-white justify-center text-center items-center w-full h-full font-bold text-xl hover:opacity-100">
+          Alguma dúvida?
+        </h1>
+      </div>
       )}
 
       {isOpen && (
